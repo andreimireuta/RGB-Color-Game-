@@ -1,0 +1,65 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.square{
+    width: 30%;  /*fiecare patrat este 305 din cotainer*/
+    background-color: purple;
+    padding-bottom: 30%; /*pentru a face patratele vizibile*/
+    float: left; /*aliniem unul langa altul patratele, in container*/
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.7s;  /*FAce ca background-ul patratelor sa dispara incet*/ 
+    --webkit-transition: background 0.7s;
+}
+.container{
+    padding-top: 15px;
+    max-width: 600px;
+    margin: 0 auto; /* 0 margine in partea de sus si jos si auto pe lateral ca sa stea la mijlocul paginii*/
+}
+h1{
+    color: aliceblue;
+    line-height: 1.1;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+#stripe{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+#message{
+  display: inline-block; /*cu aceste doua comenzi facem ca span-ul sa ia valoarea lui width din ecran*/
+  width: 20%;   /*Fereste celelate elemente mai incolo din cauza pozitiei sale de block*/
+}
+.selectedColor{
+    color: white;
+    background-color: steelblue;
+    border: none;
+}
+#colorDisplay{
+font-size: 180%;
+}
+
+button{
+    border: none; 
+    background: none; /*scapam de marginile de la butoane*/
+    text-transform: uppercase;
+    height: 100%; /*Facem ca butonul sa fie cat inaltimea div0ului din care face parte*/
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.4s; /*Vrem ca sa faca tranzitie la tot. tot sa se ste incet*/ 
+    outline: none;
+}
+button:hover{
+    color: white;
+    background-color: steelblue;
+}
